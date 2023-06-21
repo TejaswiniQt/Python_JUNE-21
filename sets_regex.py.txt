@@ -1,0 +1,43 @@
+# sets
+
+import re
+
+# Example - 1 
+# [a-k]
+'''
+txt1 = "Hi all, Good morning"
+x1 = re.findall("[a-k]",txt1)
+print(x1)
+'''
+
+# Example - 2 
+# [Mnl]
+'''
+txt2 = "Hi all, Good morning"
+x2 = re.findall("[Mnl]",txt2)
+print(x2)
+'''
+
+# Example - 3
+# [^Mnl]
+'''
+txt3 = "Hi all, Good morning"
+x3 = re.findall("[^Mnl]",txt3)
+print(x3)
+'''
+
+#example - 4 
+#Returns a match for any two-digit numbers from 50 and 99
+'''
+txt4 = "Hi all 98, good 50 morining 15 78 13 65 25" 
+x4 = re.findall("[5-9][0-9]",txt4)
+print(x4)
+'''
+
+#Example - 5
+#Returns a match for any character alphabetically between a and z, lower case OR upper case
+'''
+txt5 = "Hi all 98, good 50 morining 15 78 13 65 25" 
+x5 = re.findall("[a-zA-Z]",txt5)
+print(x5)
+'''
